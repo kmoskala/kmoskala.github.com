@@ -6,21 +6,21 @@ body {
 }
 
 h1 {
-  font-size: em(50);
+  font-size: em(80);
   @media only screen and (max-width: $sm) {
-    font-size: em(40);
+    font-size: em(70);
   }
 }
 h2 {
-  font-size:em(40);
+  font-size:em(60);
   @media only screen and (max-width: $sm) {
-    font-size: em(30);
+    font-size: em(50);
   }
 }
 h3{
-  font-size: em(30);
+  font-size: em(40);
   @media only screen and (max-width: $sm) {
-    font-size: em(20);
+    font-size: em(30);
   }
 }
 
