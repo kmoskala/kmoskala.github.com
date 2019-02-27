@@ -4,10 +4,15 @@
 #main_banner {
   margin: auto;
   position: relative;
+
+
 }
+
 .headers_container{
   margin: auto;
+
 }
+
 .icon_container {
   position: absolute;
   bottom: em(5);
@@ -16,9 +21,6 @@
   font-size: em(50);
   color: $main_color;
   cursor: pointer;
-}
-.box_container {
-
 }
 .box {
   max-height: 350px;
@@ -34,6 +36,7 @@
     .box_description {
       height: 100%;
       transition: height 5s;
+      overflow-y: auto;
       .project_description {
         display: block;
         text-align: center;
