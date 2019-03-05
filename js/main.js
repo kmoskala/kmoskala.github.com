@@ -61,7 +61,9 @@ $(document).ready(function () {
     validate_form_description_eng:
       'JQuery plugin that allows you to validate your forms. It checks if input value has a properly lenght, if it is a required filed, phone number, or email. See more on website!',
     validate_form_description_pl:
-      'Plugin Jquery, ktory umozliwia walidacje formularzy. Sprawdza czy input ma odpowiednia długość, czy jest polem obowiazkowym, czy jest numerem telefonu, czy jest e-mailem. Aby skorzystać zapraszam do przeczytania instrukcji zawartej na stronie projektu.'
+      'Plugin Jquery, ktory umozliwia walidacje formularzy. Sprawdza czy input ma odpowiednia długość, czy jest polem obowiazkowym, czy jest numerem telefonu, czy jest e-mailem. Aby skorzystać zapraszam do przeczytania instrukcji zawartej na stronie projektu.',
+    contact_me_pl:'Zapraszam do kontaktu!',
+    contact_me_eng: 'Feel free to contact me!'
     
   };
   $('#tic_tac_toe_title').text(translate.tic_tac_toe_title_pl);
@@ -72,7 +74,7 @@ $(document).ready(function () {
   $('#tomato_timer_description').text(translate.tomato_timer_description_pl);
   $('#validate_form_title').text(translate.validate_form_title_pl);
   $('#validate_form_description').text(translate.validate_form_description_pl);
-  
+  $('#contact_me').text(translate.contact_me_pl);
   $('#language .lang').click(function () {
     console.log('wtf');
     let data = $(this).data('lang');
@@ -88,6 +90,8 @@ $(document).ready(function () {
       $('#tomato_timer_description').text(translate.tomato_timer_description_pl);
       $('#validate_form_title').text(translate.validate_form_title_pl);
       $('#validate_form_description').text(translate.validate_form_description_pl);
+      $('#contact_me').text(translate.contact_me_pl);
+  
     } else {
       $('#tic_tac_toe_title').text(translate.tic_tac_toe_title_eng);
       $('#tic_tac_toe_description').text(translate.tic_tac_toe_description_eng);
@@ -97,6 +101,8 @@ $(document).ready(function () {
       $('#tomato_timer_description').text(translate.tomato_timer_description_eng);
       $('#validate_form_title').text(translate.validate_form_title_eng);
       $('#validate_form_description').text(translate.validate_form_description_eng);
+      $('#contact_me').text(translate.contact_me_eng);
+  
     }
   });
   
