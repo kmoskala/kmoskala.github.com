@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Katarzyna Moskała Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
 
@@ -26,6 +26,11 @@
 <body>
   <div class="container-fluid no_padding">
     <div id="main_banner">
+      <div id="language">
+        <div  class="lang active" data-lang="pl">PL</div>
+        &nbsp; |&nbsp;
+        <div class="lang" data-lang="eng">ENG</div>
+      </div>
       <div class="headers_container">
         <h1 class="center main_color_text bold">PORTFOLIO</h1>
         <h2 class="center grey_color_text">Katarzyna Moskała</h2>
@@ -39,26 +44,20 @@
     <div id="main_gallery" class="row ">
       <div class="box_container col-lg-6 col-md-4 col-sm-1 no_padding no_margin">
       <div class="box" style="background-image: url('img/tictactoe.png')">
-        <div class="box_description main_color_text center">
-          Tic Tac Toe<br>
-          <p class="project_description">
-            Prosta gra dla 2 graczy. Napisalam ja za pomoca technologii webowych takich jak:  Jquery, Html, Scss.
-            Zasady gry sa proste. Zawsze zaczyna gracz ze znakiem "x". Wygrywa gracz ktory jako pierwszy uzyska sekwencje 3 swoich znakow w 1 lini (pion/poziom/skos).
-            W aplikacji uwzgledniona zostala mozliwosc wpisania imion/pseudonimow graczy, na kolor rozowy wyswietla sie ikona gracza  ktorego jest tura. Do tego pod gra, znajduje sie zestawienie ktore pokazuje ktory gracz ile wygral rozgrywek oraz ile czasu zajela ostatnia rorywka. Życze milej zabawy!
-          </p>
+        <div  class="box_description main_color_text center">
+         <p id="tic_tac_toe_title"></p><br>
+          <p class="project_description" id="tic_tac_toe_description" >
+             </p>
           <a href="https://kmoskala.github.io/TicTacToe/" target="_blank"><i class="fas fa-desktop"></i></a>
-          <a href="https://github.com/kmoskala/TicTacToe"                              target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/kmoskala/TicTacToe" target="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </div>
       <div class="box_container col-lg-6 col-md-4 col-sm-1 no_padding no_margin">
         <div class="box" style="background-image: url('img/interiorDesigner.png')">
           <div class="box_description main_color_text center">
-            Interior designers page<br>
-            <p class="project_description">
-              Strona "wizytówka" sdudio architektury wnetrz .Strona napisana  za pomoca technologii webowych takich jak:  Jquery, Html, Scss, RWD.
-              Jest to prosta stronka ktora pozwala zapoznac sie z oferta studia, poznac architektow, zobaczyc wczesniejsze pracew portfolio oraz skontaktowac sie z pracownikami. Zapraszam do ogladania.
-            </p>
+            <p  id="interior_page_title"></p><br>
+            <p class="project_description" id="interior_page_description"> </p>
             <a href="https://kmoskala.github.io/InteriorDesigner/" target="_blank"><i class="fas fa-desktop"></i></a>
             <a href="https://github.com/kmoskala/InteriorDesigner" target="_blank"><i class="fab fa-github"></i></a>
           </div>
@@ -67,9 +66,9 @@
       <div class="box_container col-lg-6 col-md-4 col-sm-1 no_padding no_margin">
         <div class="box" style="background-image: url('img/timer.png')">
           <div class="box_description main_color_text center">
-            Tomato Timer<br>
-            <p class="project_description">
-              Aplikacja ulatwiajaca efektywna prace. Metoda zarzadzania czasem "Tomato Timer" polega na intensywnym wykonywaniu zadan przez 25min, nastepnie bez wzgledu na to w jakim momencie zadania jestesmy, rucamy wszystko i mamy 5 min przerwe. Aplikacja odlicza czas pracy/przerwy i po jego uplywie sygnalizuje  uzytkownikowi dzwiekiem oraz wizualnie iz czas na kolejny etap (prace/przerwe). Zapraszam do wyprobowania.
+           <p  id="tomato_timer_title" ></p> <br>
+            <p id="tomato_timer_description" class="project_description">
+            
             </p>
             <a href="https://kmoskala.github.io/tomatotimer/" target="_blank"><i class="fas fa-desktop"></i></a>
             <a href="https://github.com/kmoskala/tomatotimer" target="_blank"><i class="fab fa-github"></i></a>
@@ -79,9 +78,9 @@
       <div class="box_container col-lg-6 col-md-4 col-sm-1 no_padding no_margin">
         <div class="box" style="background-image: url('img/validator.png')">
           <div class="box_description main_color_text center">
-            Walidator formularzy<br>
-            <p class="project_description">
-              Plugin Jquery, ktory umozliwia walidacje formularzy. Sprawdza czy input ma odpowiednia długość, czy jest polem obowiazkowym, czy jest numerem telefonu, czy jest e-mailem. Aby skorzystać zapraszan do przeczytania instrukcji zawartej w readme w repozytorium.
+            <p id="validate_form_title" ></p><br>
+            <p id="validate_form_description" class="project_description">
+            
             </p>
             <a href="https://kmoskala.github.io/validataor/" target="_blank"><i class="fas fa-desktop"></i></a>
             <a href="https://github.com/kmoskala/validataor" target="_blank"><i class="fab fa-github"></i></a>
@@ -94,13 +93,13 @@
         <i class="fas fa-angle-up"></i>
       </div>
       <div class="headers_container">
-        <h1 class="center main_color_text bold">Zapraszam do kontaktu</h1>
+        <h1 id="contact_me" class="center main_color_text bold">Zapraszam do kontaktu</h1>
         <h2 class="center grey_color_text">Katarzyna Moskała</h2>
         <h3 class="center grey_color_text">Front-end developer</h3>
       </div>
     </div>
   </div>
-<script type="text/javascript" src="https://kmoskala.github.io/js.min/main.js"></script>
+<script type="text/javascript" src="js.min/main.js"></script>
 </body>
 
 </html>

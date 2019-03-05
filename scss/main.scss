@@ -5,6 +5,26 @@
   margin: auto;
   position: relative;
 
+  #language {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    top: 25px;
+    right: 25px;
+    font-size: 28px;
+    .lang{
+      cursor: pointer;
+
+      &:hover{
+        color: $main_color;
+
+      }
+      &.active{
+        color: $main_color;
+        font-weight: bold;
+      }
+    }
+  }
 
 }
 
