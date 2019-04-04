@@ -62,6 +62,12 @@ $(document).ready(function () {
       'JQuery plugin that allows you to validate your forms. It checks if input value has a properly lenght, if it is a required filed, phone number, or email. See more on website!',
     validate_form_description_pl:
       'Plugin Jquery, ktory umozliwia walidacje formularzy. Sprawdza czy input ma odpowiednia długość, czy jest polem obowiazkowym, czy jest numerem telefonu, czy jest e-mailem. Aby skorzystać zapraszam do przeczytania instrukcji zawartej na stronie projektu.',
+    yt_player_title_pl:
+      'Odtwarzacz Youtube',
+    yt_player_description_pl:
+      'Prosta strona gdzie będzie zawarty formularz z jednym polem oraz przycisk do wysłania formularza. W pole tekstowe można wpisać ID filmu z YouTube. Następnie po naciśnięciu przycisku wysłania formularza (bez przeładowania strony!) osadzany jest na stronie player YT z tym filmem. Automatycznie startuje odtwarzanie filmu. Na 10 sekund przed końcem filmu, nad filmem (przykład poniżej) powinna pojawić się warstwa, na której będzie odliczanie ile sekund pozostało do końca filmu. Ta warstwa nie może blokować możliwości przeskakiwania na inną część filmu (można swobodnie klikać w progress bar). W każdym momencie można wczytać inny film (podać inne ID filmu).',
+    yt_player_title_eng: 'Youtube Player',
+    yt_player_description_eng: 'Simple webpage, where you can write ID of Youtube movie and watch it. Ten sec before end of film, you will see black layer with counter. When the layer is visibility, you can use all buttons in YT player (Play, Pause, etc.).',
     contact_me_pl:'Zapraszam do kontaktu!',
     contact_me_eng: 'Feel free to contact me!'
     
@@ -74,9 +80,10 @@ $(document).ready(function () {
   $('#tomato_timer_description').text(translate.tomato_timer_description_pl);
   $('#validate_form_title').text(translate.validate_form_title_pl);
   $('#validate_form_description').text(translate.validate_form_description_pl);
+  $('#yt_player_title').text(translate.yt_player_title_pl);
+  $('#yt_player_description').text(translate.yt_player_description_pl);
   $('#contact_me').text(translate.contact_me_pl);
   $('#language .lang').click(function () {
-    console.log('wtf');
     let data = $(this).data('lang');
     $('#language .lang').removeClass('active');
     $(this).addClass("active");
@@ -90,6 +97,8 @@ $(document).ready(function () {
       $('#tomato_timer_description').text(translate.tomato_timer_description_pl);
       $('#validate_form_title').text(translate.validate_form_title_pl);
       $('#validate_form_description').text(translate.validate_form_description_pl);
+      $('#yt_player_title').text(translate.yt_player_title_pl);
+      $('#yt_player_description').text(translate.yt_player_description_pl);
       $('#contact_me').text(translate.contact_me_pl);
   
     } else {
@@ -101,6 +110,8 @@ $(document).ready(function () {
       $('#tomato_timer_description').text(translate.tomato_timer_description_eng);
       $('#validate_form_title').text(translate.validate_form_title_eng);
       $('#validate_form_description').text(translate.validate_form_description_eng);
+      $('#yt_player_title').text(translate.yt_player_title_eng);
+      $('#yt_player_description').text(translate.yt_player_description_eng);
       $('#contact_me').text(translate.contact_me_eng);
   
     }
